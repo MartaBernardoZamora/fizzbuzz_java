@@ -28,7 +28,6 @@ public class FizzbuzzTest {
 
         String result = fizzbuzz.checkNumber(num);
 
-        assertThat(fizzbuzz, instanceOf(Fizzbuzz.class));
         assertThat(result, is("Buzz"));
     }
     @Test
@@ -39,7 +38,6 @@ public class FizzbuzzTest {
 
         String result = fizzbuzz.checkNumber(num);
 
-        assertThat(fizzbuzz, instanceOf(Fizzbuzz.class));
         assertThat(result, is("FizzBuzz"));
     }
     @Test
@@ -50,7 +48,6 @@ public class FizzbuzzTest {
 
         String result = fizzbuzz.checkNumber(num);
 
-        assertThat(fizzbuzz, instanceOf(Fizzbuzz.class));
         assertThat(result, is("1"));
     }
 }
