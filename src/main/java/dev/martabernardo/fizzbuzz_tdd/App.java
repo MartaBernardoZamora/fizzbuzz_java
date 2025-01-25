@@ -1,8 +1,7 @@
 package dev.martabernardo.fizzbuzz_tdd;
 
-/**
- * Hello world!
- */
+import dev.martabernardo.fizzbuzz_tdd.fizzbuzz.Fizzbuzz;
+
 public final class App {
     private App() {
     }
@@ -12,10 +11,11 @@ public final class App {
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
+        Fizzbuzz fizzbuzz = new Fizzbuzz();
         for(int i = 1; i <= 100; i++){
-                  
-            System.out.println(i);
+            String result = fizzbuzz.checkNumber(i);
+            System.out.println(result);
         }
-        System.out.println("Has completado la cuenta de cien");
+        System.out.println("Has completado la primera etapa del Fizzbuzz");
     }
 }
