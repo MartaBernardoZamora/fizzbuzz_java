@@ -10,7 +10,7 @@ public class Fizzbuzz {
         if(isDivisibleBy15) return "FizzBuzz";
         if(isDivisibleBy3) return "Fizz";
         if(isDivisibleBy5) return "Buzz";
-        return "null";
+        return Integer.toString(num);
     }
 
 }
