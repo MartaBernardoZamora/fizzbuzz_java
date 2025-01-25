@@ -31,4 +31,15 @@ public class FizzbuzzTest {
         assertThat(fizzbuzz, instanceOf(Fizzbuzz.class));
         assertThat(result, is("Buzz"));
     }
+    @Test
+    @DisplayName("Devuelve fizz si es divisible entre cinco")
+    void testIsDivisibleByThreeAndFive() {
+        int num = 15;
+        Fizzbuzz fizzbuzz = new Fizzbuzz();
+
+        String result = fizzbuzz.checkNumber(num);
+
+        assertThat(fizzbuzz, instanceOf(Fizzbuzz.class));
+        assertThat(result, is("FizzBuzz"));
+    }
 }
