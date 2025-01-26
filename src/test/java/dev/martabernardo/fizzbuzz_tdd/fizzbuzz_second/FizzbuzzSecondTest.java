@@ -19,10 +19,9 @@ public class FizzbuzzSecondTest {
     @Test
     @DisplayName("Return buzz if number contains 5")
     void testNumberContains5() {
-        int num = 51;
+        int num = 52;
         FizzbuzzSecond fizzbuzzSecond = new FizzbuzzSecond();
         String result = fizzbuzzSecond.secondCheckNumber(num);
         assertThat(result, is("Buzz"));
     }
-
 }
