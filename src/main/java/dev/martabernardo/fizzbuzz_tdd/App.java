@@ -1,6 +1,7 @@
 package dev.martabernardo.fizzbuzz_tdd;
 
 import dev.martabernardo.fizzbuzz_tdd.fizzbuzz.Fizzbuzz;
+import dev.martabernardo.fizzbuzz_tdd.fizzbuzz_second.FizzbuzzSecond;
 
 public final class App {
     private App() {
@@ -17,5 +18,11 @@ public final class App {
             System.out.println(result);
         }
         System.out.println("Has completado la primera etapa del Fizzbuzz");
+        FizzbuzzSecond fizzbuzzSecond=new FizzbuzzSecond();
+        for(int i = 1; i <= 100; i++){
+            String result = fizzbuzzSecond.secondCheckNumber(i);
+            System.out.println(result);
+        }
+        System.out.println("Has completado la segunda etapa del Fizzbuzz");
     }
 }
